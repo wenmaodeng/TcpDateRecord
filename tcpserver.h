@@ -12,7 +12,7 @@ class TcpServer : public QObject
 public:
     explicit TcpServer(QObject *parent = nullptr);
     ~TcpServer();
-    Q_INVOKABLE bool start(QString ip,int port);
+    Q_INVOKABLE bool start(int port);
     Q_INVOKABLE bool stop();
     Q_INVOKABLE void sendData(QString data);
 

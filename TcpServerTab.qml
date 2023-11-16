@@ -7,29 +7,56 @@ Rectangle{
         id:row
         height: 35
         width: parent.width
+        spacing: 1
 
-        IpPortInput{
-            id:ipAndPortInput
+        Label {
+            width: 80
             height: parent.height
-            width: (parent.width-80)*0.5
-            ip:"127.0.0.1"
-            port:"9999"
+            horizontalAlignment:Text.AlignRight
+            verticalAlignment: Text.AlignVCenter
+            text: qsTr("Tcp服务端口: ")
+            color: "white"
+            background: Rectangle{
+                color: "darkgray"
+            }
+        }
+        TextField {
+            id: portText
+            width: (parent.width-164)*0.2
+            height: parent.height
+            horizontalAlignment:Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            text: "9999"
         }
         Button{
+            id:startTcpServer
             height: parent.height
             text: "创建Tcp服务"
-            width:(parent.width-80)*0.25
+            width:(parent.width-164)*0.3
             onClicked: {
-                var ip=ipAndPortInput.ip
-                var port=ipAndPortInput.port
-                tcpServer.start(ip,port)
+                var port=portText.text
+                if(tcpServer.start(port))
+                {
+                    startTcpServer.enabled=false
+                }
+            }
+        }
+        Button{
+            id:endTcpServer
+            height: parent.height
+            text: "停止Tcp服务"
+            width:(parent.width-164)*0.2
+            onClicked: {
+                tcpServer.stop()
+                startTcpServer.enabled=true
             }
         }
         Button{
             id:sendDataButton
             height: parent.height
             text: "读取文件并发送数据"
-            width:(parent.width-80)*0.25
+            width:(parent.width-164)*0.3
+            enabled: !startTcpServer.enabled
             onClicked: {
                 fileDialog.open()
             }

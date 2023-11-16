@@ -173,22 +173,22 @@ compiler_qmlcache_make_all: debug\TcpClientTab_qml.cpp debug\IpPortInput_qml.cpp
 compiler_qmlcache_clean:
 	-$(DEL_FILE) debug\TcpClientTab_qml.cpp debug\IpPortInput_qml.cpp debug\main_qml.cpp debug\TcpServerTab_qml.cpp
 debug\TcpClientTab_qml.cpp: TcpClientTab.qml
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecording/qml.qrc -o debug\TcpClientTab_qml.cpp TcpClientTab.qml
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecord/qml.qrc -o debug\TcpClientTab_qml.cpp TcpClientTab.qml
 
 debug\IpPortInput_qml.cpp: IpPortInput.qml
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecording/qml.qrc -o debug\IpPortInput_qml.cpp IpPortInput.qml
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecord/qml.qrc -o debug\IpPortInput_qml.cpp IpPortInput.qml
 
 debug\main_qml.cpp: main.qml
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecording/qml.qrc -o debug\main_qml.cpp main.qml
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecord/qml.qrc -o debug\main_qml.cpp main.qml
 
 debug\TcpServerTab_qml.cpp: TcpServerTab.qml
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecording/qml.qrc -o debug\TcpServerTab_qml.cpp TcpServerTab.qml
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource=D:/demo/TcpDateRecord/qml.qrc -o debug\TcpServerTab_qml.cpp TcpServerTab.qml
 
 compiler_qmlcache_loader_make_all: debug\qmlcache_loader.cpp
 compiler_qmlcache_loader_clean:
 	-$(DEL_FILE) debug\qmlcache_loader.cpp
 debug\qmlcache_loader.cpp: qml.qrc 
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource-file-mapping=D:/demo/TcpDateRecording/qml.qrc -o debug\qmlcache_loader.cpp qml.qrc
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\qmlcachegen.exe --resource-file-mapping=D:/demo/TcpDateRecord/qml.qrc -o debug\qmlcache_loader.cpp qml.qrc
 
 compiler_no_pch_compiler_make_all:
 compiler_no_pch_compiler_clean:
@@ -281,7 +281,7 @@ debug\moc_tcpclient.cpp: tcpclient.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\include\QtCore\qbasictimer.h \
 		debug\moc_predefs.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/demo/TcpDateRecording/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/mkspecs/win32-msvc -ID:/demo/TcpDateRecording -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQuick -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQmlModels -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQml -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtNetwork -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" tcpclient.h -o debug\moc_tcpclient.cpp
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/demo/TcpDateRecord/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/mkspecs/win32-msvc -ID:/demo/TcpDateRecord -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQuick -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQmlModels -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQml -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtNetwork -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" tcpclient.h -o debug\moc_tcpclient.cpp
 
 debug\moc_tcpserver.cpp: tcpserver.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\include\QtCore\QObject \
@@ -368,7 +368,7 @@ debug\moc_tcpserver.cpp: tcpserver.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\include\QtCore\QVariant \
 		debug\moc_predefs.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/demo/TcpDateRecording/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/mkspecs/win32-msvc -ID:/demo/TcpDateRecording -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQuick -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQmlModels -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQml -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtNetwork -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" tcpserver.h -o debug\moc_tcpserver.cpp
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/demo/TcpDateRecord/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/mkspecs/win32-msvc -ID:/demo/TcpDateRecord -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQuick -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQmlModels -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQml -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtNetwork -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" tcpserver.h -o debug\moc_tcpserver.cpp
 
 debug\moc_texthelper.cpp: texthelper.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\include\QtCore\QObject \
@@ -445,7 +445,7 @@ debug\moc_texthelper.cpp: texthelper.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\include\QtCore\qbasictimer.h \
 		debug\moc_predefs.h \
 		C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe
-	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/demo/TcpDateRecording/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/mkspecs/win32-msvc -ID:/demo/TcpDateRecording -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQuick -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQmlModels -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQml -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtNetwork -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" texthelper.h -o debug\moc_texthelper.cpp
+	C:\Qt\Qt5.14.2\5.14.2\msvc2017\bin\moc.exe $(DEFINES) --compiler-flavor=msvc --include D:/demo/TcpDateRecord/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/mkspecs/win32-msvc -ID:/demo/TcpDateRecord -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQuick -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQmlModels -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtQml -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtNetwork -IC:/Qt/Qt5.14.2/5.14.2/msvc2017/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt" texthelper.h -o debug\moc_texthelper.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
