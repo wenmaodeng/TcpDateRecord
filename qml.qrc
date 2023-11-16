@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>TcpClientTab.qml</file>
+        <file>TcpServerTab.qml</file>
+        <file>IpPortInput.qml</file>
+    </qresource>
+</RCC>
